@@ -35,7 +35,7 @@ def z1():
   newIceCreamStand.describe_restaurant()
   newIceCreamStand.open_restaurant()
   newIceCreamStand.list_flavors()
-
+z1()
 def z2():
   class IceCreamStand(Restaurant):
     def __init__(self, restaurant_name, cuisine_type, flavors, location, work_time):
@@ -140,6 +140,7 @@ def z2():
   print()
   softicecream.check_flavor_popsicle(input('Введите размер мягкого мороженого для проверки наличия: '))
   print()
+z2()
 
 
 def z3():
@@ -159,13 +160,9 @@ def z3():
           self.flavors_listbox.insert(tk.END, flavor)
         self.flavors_listbox.grid(row=2)
 
-        self.selected_flavors_listbox = tk.Listbox(self.root)
-        self.selected_flavors_listbox.grid(row=3)
-
         self.root.mainloop()
 
-
-    if __name__ == "lab12":
+    if __name__ == '__main__':
       flavors = ["Vanilla", "Chocolate", "Strawberry", "Mint"]
       ice_cream_stand = IceCreamStand(flavors)
 
